@@ -197,6 +197,7 @@ namespace BancoBr.Common.Core
             new Ocorrencia("SS", "Pagamento cancelado por insuficiência de saldo ou limite diário excedido"),
             new Ocorrencia("TA", "Lote Não Aceito - Totais do Lote com Diferença", "Verificar no trailer de lote nas posições de 18 a 23 se o somatório de registros informados está preenchido e se está correto em relação ao total de linhas do lote. \r\nVerificar no trailer de lote nas posições de 24 a 41 se o total do valor do lote está correto em relação ao valor total dos pagamentos. \r\nNo trailer do arquivo nas posições de 18 a 23, verificar se a quantidade de lotes está correta ou nas posições de 24 a 29 se quantidade de registros informados está correta em relação ao total de linhas no arquivo remessa. \r\nPara mais detalhes verificar no layout G057, P007, G049 e G056."),
             new Ocorrencia("TI", "Titularidade inválida"),
+            new Ocorrencia("XX", "Código de ocorrência XX inexistente. Verificar junto ao banco!"),
             new Ocorrencia("X1", "Forma incompatível com layout 010"),
             new Ocorrencia("X2", "Número da nota fiscal inválido"),
             new Ocorrencia("X3", "Identificador de NF/CNPJ inválido"),
