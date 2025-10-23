@@ -299,7 +299,7 @@ namespace BancoBr.CNAB.Base
                     ((SegmentoA_Transferencia)segmento).ContaFavorecido = ((MovimentoItemTransferenciaTED)movimento.MovimentoItem).NumeroConta;
                     ((SegmentoA_Transferencia)segmento).DVContaFavorecido = ((MovimentoItemTransferenciaTED)movimento.MovimentoItem).DVConta;
 
-                    if (((MovimentoItemTransferenciaTED)movimento.MovimentoItem).DVConta.Length >= 2)
+                    if (((MovimentoItemTransferenciaTED)movimento.MovimentoItem).DVConta?.Length >= 2)
                     {
                         ((SegmentoA_Transferencia)segmento).DVContaFavorecido = ((MovimentoItemTransferenciaTED)movimento.MovimentoItem).DVConta.Substring(0, 1);
                         ((SegmentoA_Transferencia)segmento).DVAgenciaContaFavorecido = ((MovimentoItemTransferenciaTED)movimento.MovimentoItem).DVConta?.Substring(1, 1);
